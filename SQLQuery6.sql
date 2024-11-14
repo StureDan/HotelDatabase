@@ -1,0 +1,1 @@
+﻿CREATE TABLE HotelFacility ( Id int NOT NULL PRIMARY KEY, Price VARCHAR(30) NOT NULL, Hotel_no int NOT NULL, FOREIGN KEY (Hotel_no) REFERENCES dbo.Hotel(Hotel_no), Facility_no int NOT NULL, FOREIGN KEY (Facility_no) REFERENCES DemoFacility(Facility_no))
